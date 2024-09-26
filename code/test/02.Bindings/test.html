@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rective JavaScript</title>
+    <link rel="stylesheet" href="/test/styles.min.css">
+    <style>
+      .title {
+        font-size: 50px;
+      }
+      .subtitle {
+        padding: 20px;
+        font-size: 30px;
+        font-weight: 400;
+      }
+      .card {
+        border: 1px solid #fafafa;
+      }
+      .card-content {
+        height: 200px;
+        font-size: 70px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card-footer-item {
+        font-weight: 900;
+        font-size: 20px;
+      }
+      .red    { background: red;    }
+      .yellow { background: orange; }
+      .green  { background: green;  }
+
+      .card [active] {
+        background: orange;
+      }
+    </style>
+    <script type="module" src="/src/helpers/helper.loader.js"></script>
+  </head>
+  <body>
+
+    <template id="action">
+      <button class="button is-medium is-link">Start</button>
+    </template>
+
+    <template id="console">
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="text card-content"></div>
+          <footer class="card-footer">
+            <p class="name card-footer-item"></p>
+          </footer>
+        </div>
+      </div>
+    </template> 
+
+    <section class="hero is-primary is-link is-medium">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <p class="title">Arquitecturas Reactivas en JavaScript</p>
+          <p class="subtitle test">Modelo de Enlaces</p>
+        </div>
+      </div>
+      <div class="hero-foot">
+        <nav class="tabs">
+          <div class="container">
+            <ul>
+              <li><a href="/test/test.html">..</a></li>
+              <li><a href="/test/02.Bindings/test.html?key=01">Test 01</a></li>
+              <li><a href="/test/02.Bindings/test.html?key=02">Test 02</a></li>
+              <li><a href="/test/02.Bindings/test.html?key=03">Test 03</a></li>
+              <li><a href="/test/02.Bindings/test.html?key=04">Test 04</a></li>
+              <li><a href="/test/02.Bindings/test.html?key=05">Test 05</a></li>
+              <li><a href="/test/02.Bindings/test.html?key=06">Test 06</a></li>
+              <li><a href="/test/02.Bindings/test.html?key=07">Test 07</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div id="actions" class="buttons is-centered">
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h1 class="title has-text-centered">Views</h1>
+        <div id="consoles" class="columns is-multiline is-centered">
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>

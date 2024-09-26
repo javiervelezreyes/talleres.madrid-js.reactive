@@ -1,0 +1,8 @@
+{
+  "name": "reactive",
+  "version": "1.0.0",
+  "description": "Reactive Architectures in JavaScript",
+  "type": "module",
+  "author": "Javier Vélez Reyes",
+  "license": "ISC"
+}
